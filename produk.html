@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Evora Volt X</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="components.js"></script>
+</head>
+
+<body class="page-produk">
+    <!-- Navbar Component -->
+    <app-header active="produk" solid></app-header>
+
+    <!-- Page Hero / Product Overview -->
+    <section class="page-hero">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <a href="index.html">Beranda</a>
+                <span class="breadcrumb-sep">&gt;</span>
+                <a href="index.html#produk">Produk</a>
+                <span class="breadcrumb-sep">&gt;</span>
+                <span class="breadcrumb-active">Evora Volt X</span>
+            </nav>
+
+            <div class="page-hero-grid">
+                <div>
+                    <h1>Evora Volt X</h1>
+                    <p class="page-hero-lead">
+                        EVORA Volt X merupakan inovasi baterai mobil listrik yang dirancang untuk mengoptimalkan
+                        performa kendaraan dan efisiensi energi. Dilengkapi teknologi pengisian cepat serta sistem
+                        manajemen baterai cerdas, EVORA Volt X mendukung pengalaman berkendara yang andal dan efisien
+                        untuk perjalanan sehari-hari maupun jarak jauh, sekaligus mendukung mobilitas yang lebih
+                        berkelanjutan.
+                    </p>
+                    <div class="slide-actions">
+                        <a href="#keunggulan" class="btn btn-primary btn-lg">
+                            Lihat Keunggulan
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <line x1="12" y1="5" x2="12" y2="19"></line>
+                                <polyline points="19 12 12 19 5 12"></polyline>
+                            </svg>
+                        </a>
+                        <a href="#spesifikasi" class="btn btn-secondary btn-lg">
+                            Lihat Spesifikasi
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <line x1="12" y1="5" x2="12" y2="19"></line>
+                                <polyline points="19 12 12 19 5 12"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-media-card">
+                    <img src="assets/voltx.png" alt="Baterai Kendaraan Listrik Evora Volt X" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Keunggulan Section (4 Baris Selang-Seling) -->
+    <section class="section" id="keunggulan">
+        <div class="container">
+            <div class="section-head">
+                <h2>Keunggulan Evora Volt X</h2>
+            </div>
+
+            <div class="keunggulan-rows">
+                <!-- Baris 1: Gambar di Kiri, Judul & Deskripsi di Kanan -->
+                <div class="keunggulan-row">
+                    <div class="keunggulan-visual">
+                        <img src="assets/efisiensi.jpg" alt="Arsitektur Sel Baterai Evora Volt X" />
+                    </div>
+                    <div class="keunggulan-content">
+                        <span class="keunggulan-num">01</span>
+                        <h3>Efisiensi Energi</h3>
+                        <p>
+                            Dirancang untuk mengoptimalkan penggunaan energi agar perjalanan lebih efisien dan mendukung
+                            performa kendaraan listrik.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Baris 2: Judul & Deskripsi di Kiri, Gambar di Kanan (Reverse) -->
+                <div class="keunggulan-row reverse">
+                    <div class="keunggulan-content">
+                        <span class="keunggulan-num">02</span>
+                        <h3>Sistem Manajemen Baterai (BMS)</h3>
+                        <p>
+                            Memantau kondisi baterai untuk membantu menjaga kinerja, keamanan, dan keandalan selama
+                            penggunaan.
+                        </p>
+                    </div>
+                    <div class="keunggulan-visual">
+                        <img src="assets/bms.jpg" alt="Pengisian Cepat Baterai Evora Volt X" />
+                    </div>
+                </div>
+
+                <!-- Baris 3: Gambar di Kiri, Judul & Deskripsi di Kanan -->
+                <div class="keunggulan-row">
+                    <div class="keunggulan-visual">
+                        <img src="assets/suhu.jpg" alt="Performa Kendaraan Listrik Evora" />
+                    </div>
+                    <div class="keunggulan-content">
+                        <span class="keunggulan-num">03</span>
+                        <h3>Manajemen Suhu</h3>
+                        <p>
+                            Membantu menjaga suhu baterai tetap dalam rentang operasional yang sesuai untuk mendukung
+                            kinerja dan masa pakai baterai.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Baris 4: Judul & Deskripsi di Kiri, Gambar di Kanan (Reverse) -->
+                <div class="keunggulan-row reverse">
+                    <div class="keunggulan-content">
+                        <span class="keunggulan-num">04</span>
+                        <h3>Mobilitas Berkelanjutan</h3>
+                        <p>
+                            Mendukung penggunaan kendaraan listrik sebagai langkah menuju sistem transportasi yang lebih
+                            ramah lingkungan.
+                        </p>
+                    </div>
+                    <div class="keunggulan-visual">
+                        <img src="assets/mobilitas.jpg" alt="Baterai Evora Volt X Casing Proteksi" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Spesifikasi Utama Ringkas -->
+    <section class="section" id="spesifikasi">
+        <div class="container">
+            <div class="section-head">
+                <h2>Spesifikasi Evora Volt X</h2>
+            </div>
+
+            <div class="spec-cards-grid">
+                <!-- Card 1: Kapasitas Energi -->
+                <div class="spec-card">
+                    <div class="spec-card-top">
+                        <div class="spec-card-icon">
+                            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="7" width="16" height="12" rx="2"></rect>
+                                <line x1="22" y1="11" x2="22" y2="15"></line>
+                                <path d="M7 13l3-3 2 4 3-3"></path>
+                            </svg>
+                        </div>
+                        <span class="spec-card-label">Kapasitas Energi</span>
+                    </div>
+                    <div class="spec-card-body">
+                        <h3 class="spec-card-value">92 kWh</h3>
+                        <p class="spec-card-desc">Opsi Long Range hingga 115 kWh</p>
+                    </div>
+                </div>
+
+                <!-- Card 2: Estimasi Jarak Tempuh -->
+                <div class="spec-card">
+                    <div class="spec-card-top">
+                        <div class="spec-card-icon">
+                            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+                            </svg>
+                        </div>
+                        <span class="spec-card-label">Jarak Tempuh</span>
+                    </div>
+                    <div class="spec-card-body">
+                        <h3 class="spec-card-value">650+ km</h3>
+                        <p class="spec-card-desc">Per pengisian daya penuh</p>
+                    </div>
+                </div>
+
+                <!-- Card 3: Waktu Pengisian Cepat -->
+                <div class="spec-card">
+                    <div class="spec-card-top">
+                        <div class="spec-card-icon">
+                            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                            </svg>
+                        </div>
+                        <span class="spec-card-label">Pengisian Cepat</span>
+                    </div>
+                    <div class="spec-card-body">
+                        <h3 class="spec-card-value">18 Menit</h3>
+                        <p class="spec-card-desc">10% &ndash; 80% DC Fast Charger 800V</p>
+                    </div>
+                </div>
+
+                <!-- Card 4: Garansi Resmi -->
+                <div class="spec-card">
+                    <div class="spec-card-top">
+                        <div class="spec-card-icon">
+                            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="8" r="6"></circle>
+                                <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"></path>
+                            </svg>
+                        </div>
+                        <span class="spec-card-label">Garansi Resmi</span>
+                    </div>
+                    <div class="spec-card-body">
+                        <h3 class="spec-card-value">8 Tahun</h3>
+                        <p class="spec-card-desc">Atau 200.000 Kilometer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner Component -->
+    <app-cta></app-cta>
+
+    <!-- Footer Component -->
+    <app-footer></app-footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

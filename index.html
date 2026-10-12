@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Evora</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="components.js"></script>
+</head>
+
+<body>
+    <!-- Navbar Component -->
+    <app-header active="beranda"></app-header>
+
+    <section class="hero" id="hero">
+        <div class="slider" id="slider">
+            <div class="slide is-active" style="background-image: url('assets/baterai.png');">
+                <div class="container slide-content">
+                    <h1>Memperkenalkan <br><span class="text-gradient">Evora Volt X</span></h1>
+                    <p>Teknologi baterai mobil listrik untuk mendukung <br> mobilitas yang lebih berkelanjutan.</p>
+                    <div class="slide-actions">
+                        <a href="#produk" class="btn btn-ghost">
+                            Jelajahi Produk
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <line x1="7" y1="17" x2="17" y2="7" />
+                                <polyline points="7 7 17 7 17 17" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide"
+                style="background-image: linear-gradient(120deg, rgba(6,20,40,.85), rgba(6,20,40,.35)), url('assets/isi.png');">
+                <div class="container slide-content">
+                    <h1>Saatnya Beralih<br><span class="text-gradient">ke Energi Baru.</span></h1>
+                    <p>Jelajahi potensi kendaraan listrik dan langkah <br> menuju perjalanan yang lebih ramah
+                        lingkungan.</p>
+                    <div class="slide-actions">
+                        <a href="#produk" class="btn btn-ghost">
+                            Jelajahi Produk
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <line x1="7" y1="17" x2="17" y2="7" />
+                                <polyline points="7 7 17 7 17 17" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide"
+                style="background-image: linear-gradient(120deg, rgba(6,20,40,.85), rgba(6,20,40,.35)), url('assets/mobil.png');">
+                <div class="container slide-content">
+                    <h1>Melaju Menuju<br><span class="text-gradient">Masa Depan.</span></h1>
+                    <p>Dukung langkah menuju transportasi rendah emisi melalui perkembangan kendaraan listrik.</p>
+                    <div class="slide-actions">
+                        <a href="#produk" class="btn btn-ghost">
+                            Jelajahi Produk
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <line x1="7" y1="17" x2="17" y2="7" />
+                                <polyline points="7 7 17 7 17 17" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <button class="slider-arrow prev" id="prev" aria-label="Slide sebelumnya">&#10094;</button>
+            <button class="slider-arrow next" id="next" aria-label="Slide berikutnya">&#10095;</button>
+
+            <div class="slider-dots" id="dots"></div>
+        </div>
+    </section>
+
+    <section class="section" id="produk">
+        <div class="container">
+
+            <!-- Product Spotlight Card -->
+            <div class="product-spotlight">
+                <div class="product-spotlight-visual">
+                    <img src="assets/voltx.png" alt="Baterai Kendaraan Listrik Evora Volt X" class="spotlight-img" />
+                </div>
+
+                <div class="product-spotlight-content">
+                    <h3 class="spotlight-title">Informasi Produk</h3>
+                    <p class="spotlight-desc">
+                        Evora Volt X adalah inovasi baterai mobil listrik yang dirancang untuk mendukung
+                        performa kendaraan, efisiensi energi, dan kebutuhan mobilitas modern dengan pendekatan
+                        yang lebih berkelanjutan.
+                    </p>
+
+                    <ul class="spotlight-features">
+                        <li>
+                            <span class="feature-check-icon">
+                                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor"
+                                    stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                            </span>
+                            <span>Efisiensi Energi</span>
+                        </li>
+                        <li>
+                            <span class="feature-check-icon">
+                                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor"
+                                    stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                            </span>
+                            <span>Sistem Manajemen Baterai (BMS)</span>
+                        </li>
+                        <li>
+                            <span class="feature-check-icon">
+                                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor"
+                                    stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                            </span>
+                            <span>Manajemen Suhu</span>
+                        </li>
+                        <li>
+                            <span class="feature-check-icon">
+                                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor"
+                                    stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                            </span>
+                            <span>Mobilitas Berkelanjutan</span>
+                        </li>
+                    </ul>
+
+                    <div class="spotlight-actions">
+                        <a href="produk.html" class="btn btn-primary btn-lg">
+                            Lihat Detail
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                        <a href="#kontak" class="btn btn-secondary btn-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                </path>
+                            </svg>
+                            Konsultasi Teknis
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner Component -->
+    <app-cta></app-cta>
+
+    <section class="section contact" id="kontak">
+        <div class="container">
+            <div class="section-head">
+                <h2>Hubungi Tim Kami</h2>
+                <p>Jangan ragu untuk menghubungi tim Evora untuk pertanyaan, informasi produk, maupun kebutuhan lainnya.
+                </p>
+            </div>
+
+            <div class="contact-layout">
+                <!-- Sisi Kiri: List Informasi Kontak -->
+                <div class="contact-list">
+                    <!-- Item Telepon & WA -->
+                    <div class="contact-item">
+                        <div class="contact-item-icon">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M5 4h4l2 5-3 2a12 12 0 006 6l2-3 5 2v4a2 2 0 01-2 2A17 17 0 013 6a2 2 0 012-2z" />
+                            </svg>
+                        </div>
+                        <div class="contact-item-content">
+                            <h3>Telepon &amp; WhatsApp</h3>
+                            <p class="contact-val">+62 812 3456 7890</p>
+                            <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer"
+                                class="contact-action-link">
+                                Chat via WhatsApp
+                                <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Item Email -->
+                    <div class="contact-item">
+                        <div class="contact-item-icon">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M4 5h16v14H4z" />
+                                <path d="M4 6l8 6 8-6" />
+                            </svg>
+                        </div>
+                        <div class="contact-item-content">
+                            <h3>Email Resmi</h3>
+                            <p class="contact-val">info@evora.id</p>
+                            <a href="mailto:info@evora.id" class="contact-action-link">
+                                Kirim Email Langsung
+                                <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Item Lokasi Kantor -->
+                    <div class="contact-item">
+                        <div class="contact-item-icon">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M12 21s-7-6-7-11a7 7 0 0114 0c0 5-7 11-7 11z" />
+                                <circle cx="12" cy="10" r="2.5" />
+                            </svg>
+                        </div>
+                        <div class="contact-item-content">
+                            <h3>Lokasi Kantor Pusat</h3>
+                            <p class="contact-val">Jl. Teknologi No. 88, Jakarta Selatan, DKI Jakarta 12340</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sisi Kanan: Card Peta / Map -->
+                <div class="contact-map-card card">
+                    <div class="map-card-header">
+                        <div class="map-card-status">
+                            <span>Lokasi Kantor Evora</span>
+                        </div>
+                    </div>
+                    <div class="map-embed-wrapper">
+                        <iframe
+                            src="https://maps.google.com/maps?q=Jl.+Teknologi+No.+88,+Jakarta&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade" title="Peta Kantor Pusat Evora">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Component -->
+    <app-footer></app-footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
